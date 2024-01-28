@@ -14,13 +14,11 @@ int sum_them_all(const unsigned int n, ...)
 	int us = 0;
 	va_list add;
 
-/*if constant int n is not 0 or less*/
 	if (n > 0)
 	{
 		va_start(add, n);
 
 		while (me < n)
-/* perform addition of arguments pass(integers)*/
 		{
 			us += va_arg(add, int);
 			me++;
