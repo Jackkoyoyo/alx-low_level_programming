@@ -56,7 +56,7 @@ void closerr(int frd)
 int main(int ac, char **av)
 {
 	int srcfd, destfd;
-	char buferr[BUFSIZE];
+	char bufferr[BUFSIZE];
 	ssize_t readb, writeb;
 	int destflags = O_WRONLY | O_APPEND | O_CREAT | O_TRUNC;
 	mode_t print = S_IWUSR | S_IRUSR | S_IWGRP | S_IRGRP | S_IROTH;
@@ -71,7 +71,7 @@ int main(int ac, char **av)
 	if (srcfd == -1)
 		srcerr(av[1]);
 
-	destfd = open(av[2], destflags, destperms);
+	destfd = open(av[2], destflags, print);
 	if (destfd == -1)
 		desterr(av[2]);
 
