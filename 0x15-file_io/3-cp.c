@@ -33,7 +33,7 @@ void desterr(char *filename)
 
 /**
  * closerr - prints error for closing file descriptor and exits
- * @fd: file descriptor
+ * @frd: file descriptor
  *
  * Return: void always
  */
