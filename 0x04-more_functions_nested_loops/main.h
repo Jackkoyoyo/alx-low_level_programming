@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 int _isupper(int c);
 int _isdigit(int c);
@@ -14,6 +15,6 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
-int _putchar(int c);
+int _putchar(char c);
 
 #endif
